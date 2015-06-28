@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -25,7 +26,7 @@ import networking.RequestData;
 
 public class LoginActivity extends Activity {
 
-    private Button mLoginButton;
+    private ImageButton mLoginButton;
     private EditText mUserEditText;
     private EditText mPasswordEditText;
     private RequestData mLoginData;
@@ -36,7 +37,7 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mLoginButton = (Button)findViewById(R.id.login_button);
+        mLoginButton = (ImageButton)findViewById(R.id.login_button);
         mUserEditText = (EditText)findViewById(R.id.user_name);
         mPasswordEditText = (EditText)findViewById(R.id.password);
 
